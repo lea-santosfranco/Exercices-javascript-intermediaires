@@ -18,4 +18,4 @@ function allumerFeu(){
     rouge.classList.add ("allume")
   }
 }
-setInterval (allumerFeu, 2000);
+setInterval (allumerFeu, 1000);
