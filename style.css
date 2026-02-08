@@ -31,9 +31,31 @@
     background-color: green;
 } */
 
-.modalCard{
-    background-color: #000;
-    color: #fff;
-    padding: 30px;
-    
+/*.modal{
+    display: none;
+    position: fixed;
+    background-color: black;
+    opacity: 0.8;
 }
+.modalContent{
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    border-radius: 10px;
+    position: relative;
+}
+.modal.active{
+    display: block;
+}
+.closeButton{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    color: #000;
+
+}
+*/
+
+
