@@ -103,21 +103,21 @@ class personnage{
 }
 
 class guerrier{
-    constructor(nom, pointsDeVie, force, competence){
+    constructor(nom, pointsDeVie, CA, competence){
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
-        this.force = force;
+        this.CA = CA;
         this.competence = competence;
-
-        this.afficherInfos();
-        console.log("Nom du guerrier :" + this.nom);
-        console.log("Points de vie du guerrier :" + this.pointsDeVie);
-        console.log("Force du guerrier : " + this.force);
-        console.log("Compétence du guerrier : " + this.competence);
+        }
+        afficherInfos(){
+            console.log("Nom du guerrier :" + this.nom);
+            console.log("Points de vie du guerrier :" + this.pointsDeVie);
+            console.log("Classe d'armure du guerrier : " + this.CA);
+            console.log("Compétence du guerrier : " + this.competence);
     }
 }
 var monGuerrier = new guerrier ("Laezel", 120, 15, "Coup puissant");
-console.log(monGuerrier);
+monGuerrier.afficherInfos();
 
 class mage{
     constructor(nom, pointsDeVie, CA, competence){
@@ -167,6 +167,5 @@ class paladin{
         console.log("Compétence du paladin : " + this.competence);
     }
 }
-
 var monPaladin = new paladin("Hector", 150, 14, "smite");
 monPaladin.afficherInfos();
