@@ -24,9 +24,22 @@
    // display none block   
    // classList add remove  
 
-   // const modal = document.getElementById("myModal");
-   // const buttonOpen = document.getElementById("buttonOpen");
-   // const closeButton = document.querySelector(".closeButton");
+   //Exercice 3//
+
+const modal = document.getElementById("myModal");
+const buttonOpen = document.getElementById("buttonOpen");
+const closeButton = document.querySelector(".closeButton");
+buttonOpen.addEventListener("click", function(){
+    modal.style.display = "block";
+});
+closeButton.addEventListener("click", function(){
+    modal.style.display = "none";
+});
+window.addEventListener("click", function(event){
+    if (event.target === modal){
+        modal.style.display = "none";
+    }
+});
 
 
    //Exercice 4 //
