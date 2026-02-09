@@ -43,24 +43,21 @@
 
 
 //    //Exercice 4 //
-//    class calculerSomme{
-//     constructor(listeNombre){
-//         this.nombres = listeNombre
-//         this.somme = 0
-//     }
-//     calculer(){
-//         let total = 0;
-//         for (let i = 0; i < this.nombres.length; i++){
-//             total = total + this.nombres[i]
-//         }
-//         this.somme = total;
-//         return this.somme;
-//     }
-//     afficherResultat(){
-//         console.log("Resultat :" + this.somme);
-//     }
-//    }
+   class calculerSomme{
+    constructor(valeurInitiale){
+        this.total = valeurInitiale;
+    }
+    calculer(nombre){
+        this.total += nombre;
+    }
+    afficherResultat(){
+        console.log("Resultat :" + this.total);
+    }
+   }
 
+   const calculatrice = new calculerSomme (10);
+   calculatrice.calculer(5);
+   calculatrice.afficherResultat();
 //Exercice 5//
 
 // class Arme{
