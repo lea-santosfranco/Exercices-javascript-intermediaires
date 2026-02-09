@@ -94,10 +94,10 @@
 //Exercice 6//
 
 class personnage{
-    constructor(nom, pointsdeVie, force, competence){
+    constructor(nom, pointsdeVie, CA, competence){
         this.nom = nom;
         this.pointsDeVie = pointsdeVie;
-        this.force = force;
+        this.CA = CA;
         this.competence = competence;
     }
 }
@@ -116,45 +116,57 @@ class guerrier{
         console.log("Compétence du guerrier : " + this.competence);
     }
 }
+var monGuerrier = new guerrier ("Laezel", 120, 15, "Coup puissant");
+console.log(monGuerrier);
+
 class mage{
-    constructor(nom, pointsDeVie, force, competence){
+    constructor(nom, pointsDeVie, CA, competence){
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
-        this.force = force;
+        this.CA = CA;
         this.competence = competence;
     }
     afficherInfos(){
         console.log("Nom du mage :" + this.nom);
         console.log("Points de vie du mage :" + this.pointsDeVie);
-        console.log("Force du mage : " + this.force);
+        console.log("Classe d'armure du mage : " + this.CA);
         console.log("Compétence du mage : " + this.competence);
     }
 }
+var monMage = new mage ("Gayle", 80, 10, "Fireball");
+monMage.afficherInfos();
+
 class archer{
-    constructor(nom, pointsDeVie, force, competence){
+    constructor(nom, pointsDeVie, CA, competence){
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
-        this.force = force;
+        this.CA = CA;
         this.competence = competence;
     }
     afficherInfos(){
         console.log("Nom de l'archer :" + this.nom);
         console.log("Points de vie de l'archer :" + this.pointsDeVie);
-        console.log("Force de l'archer : " + this.force);
+        console.log("Classe d'armure de l'archer : " + this.CA);
         console.log("Compétence de l'archer : " + this.competence);
     }
 }
+var monArcher = new archer ("Archer", 100, 12, "Gachette");
+monArcher.afficherInfos();
+
 class paladin{
-    constructor(nom, pointsDeVie, force, competence){
+    constructor(nom, pointsDeVie, CA , competence){
         this.nom = nom;
         this.pointsDeVie = pointsDeVie;
-        this.force = force;
+        this.CA = CA;
         this.competence = competence;
     }
     afficherInfos(){
         console.log("Nom du paladin :" + this.nom);
         console.log("Points de vie du paladin :" + this.pointsDeVie);
-        console.log("Force du paladin : " + this.force);
+        console.log("Classe d'armure du paladin : " + this.CA);
         console.log("Compétence du paladin : " + this.competence);
     }
 }
+
+var monPaladin = new paladin("Hector", 150, 14, "smite");
+monPaladin.afficherInfos();
